@@ -20,14 +20,15 @@
         <meta property="og:site_name" content="OWEN Analytics">
         <meta property="og:locale" content="en_IN">
 
-        
+
         <!-- Page styles -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="css/material.min.css">
         <link href="css/materialdesignicons.css" media="all" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="css/styles.css">
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        
         <script>
             (function (i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
@@ -48,7 +49,7 @@
     </head>
     <body>
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-            <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+            <header class="android-header mdl-layout__header mdl-layout__header--waterfall">
                 <div class="mdl-layout__header-row">
                     <a href="index.html">
                         <span class="android-title mdl-layout-title">
@@ -71,7 +72,7 @@
                         <img class="android-logo-image" src="images/OWEN_Logo.png">
                     </span>
                 </div>
-            </div>
+            </header>
 
             <div class="android-drawer mdl-layout__drawer">
                 <span class="mdl-layout-title">
@@ -101,12 +102,14 @@
                     <a class="mdl-navigation__link" href="contactus.html#git">Get in touch</a>
                     <a class="mdl-navigation__link" href="contactus.html#locations">Locations</a>
                     <div class="android-drawer-separator"></div>
-                    <span class="mdl-navigation__link">Login</span>
+                    <span class="mdl-navigation__link">
+                        <a class="mdl-mdl-typography--text-uppercase mdl-color-text--orange-500 login-link-drawer" href="http://engage.owenanalytics.com/">Login</a>
+                    </span>
                 </nav>
             </div>
 
-            <div class="android-content mdl-layout__content">
-                <a name="top"></a>
+            <main class="android-content mdl-layout__content">
+                <a id="top"></a>
 
                 <div class="android-wear-section">
                     <div class="android-wear-band">
@@ -405,7 +408,7 @@
                                 </div>
                             </div>
                             <div class="mdl-card__actions mdl-card--border">
-                                <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://getmdl.io/templates/android-dot-com/index.html" data-upgraded=",MaterialButton">
+                                <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="" data-upgraded=",MaterialButton">
                                     Apply now
                                     <i class="material-icons">chevron_right</i>
                                 </a>
@@ -559,9 +562,10 @@
                     </div>
 
                 </footer>
-            </div>
+            </main>
         </div>
         <a href="contactus.html" id="contact-us" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--green mdl-color-text--accent-contrast">Contact Us<i class="material-icons">chevron_right</i></a>
         <script src="js/material.min.js"></script>
+        <script src="js/owen.js"></script>
     </body>
 </html>

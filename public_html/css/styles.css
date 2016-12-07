@@ -894,6 +894,10 @@ div .mdl-textfield__label:after {
     padding-bottom: 10px;
 }
 
+.login-link-drawer{
+    text-decoration: none;
+}
+
 .page-bg-image{
     background: #ebce26 center no-repeat;
     background-image: url('../images/howitworks.png');

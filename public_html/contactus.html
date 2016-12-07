@@ -3,13 +3,13 @@
 <html lang="en">
     <head>
         <title>Contact Us</title>
-        
+
         <meta name="description" content="Get in touch to help you understand how OWEN can help you with talent acquisition, productivity, onboarding and engagement and retention">
         <meta name="keywords" content="human resources, HR, big data, talent management, talent acquisition, productivity, onboarding, onboarding and engagement, recruitment, solution, insights, machine learning, artificial intelligence, organizational network analysis, ona, retention, attrition">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
         <meta content="IE=11;IE=Edge" http-equiv="X-UA-Compatible">
         <meta charset="utf-8">
-        
+
         <meta itemprop="name" content="Contact Us">
         <meta itemprop="description" content="Get in touch to help you understand how OWEN can help you with talent acquisition, productivity, onboarding and engagement and retention">
 
@@ -20,7 +20,7 @@
         <meta property="og:site_name" content="OWEN Analytics">
         <meta property="og:locale" content="en_IN">
 
-        
+
         <!-- Page styles -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -31,7 +31,7 @@
     </head>
     <body>
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-            <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+            <header class="android-header mdl-layout__header mdl-layout__header--waterfall">
                 <div class="mdl-layout__header-row">
                     <a href="index.html">
                         <span class="android-title mdl-layout-title">
@@ -47,14 +47,14 @@
                             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="solutions.html">Solutions</a>
                             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="howitworks.html">How it works ?</a>
                             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="about.html">About Us</a>
-                            <a class="mdl-mdl-typography--text-uppercase mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--orange-500 mdl-color-text--white" href="">Login</a>
+                            <a class="mdl-mdl-typography--text-uppercase mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--orange-500 mdl-color-text--white" href="http://engage.owenanalytics.com/">Login</a>
                         </nav>
                     </div>
                     <span class="android-mobile-title mdl-layout-title">
                         <img class="android-logo-image" src="images/OWEN_Logo.png">
                     </span>
                 </div>
-            </div>
+            </header>
 
             <div class="android-drawer mdl-layout__drawer">
                 <span class="mdl-layout-title">
@@ -84,12 +84,14 @@
                     <a class="mdl-navigation__link" href="contactus.html#git">Get in touch</a>
                     <a class="mdl-navigation__link" href="contactus.html#locations">Locations</a>
                     <div class="android-drawer-separator"></div>
-                    <span class="mdl-navigation__link">Login</span>
+                    <span class="mdl-navigation__link">
+                        <a class="mdl-mdl-typography--text-uppercase mdl-color-text--orange-500 login-link-drawer" href="http://engage.owenanalytics.com/">Login</a>
+                    </span>
                 </nav>
             </div>
 
-            <div class="android-content mdl-layout__content">
-                <a name="top"></a>
+            <main class="android-content mdl-layout__content">
+                <a id="top"></a>
                 <div class="android-card-container mdl-grid">
                     <div class="mdl-layout-spacer"></div>
                     <a id = "git"></a>
@@ -180,7 +182,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <footer class="android-footer mdl-mega-footer">
                     <div class="mdl-mega-footer--top-section">
                         <div class="mdl-mega-footer--left-section">
@@ -253,27 +255,27 @@
                     </div>
 
                 </footer>
-            </div>
+            </main>
         </div>
         <!--<a href="index.html" target="_blank" id="contact-us" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--green mdl-color-text--accent-contrast">Home<i class="material-icons">chevron_right</i></a>-->
         <script src="js/material.min.js"></script>
         <script src="js/owen.js"></script>
         <script>
-            var dialog = document.querySelector('dialog');
-            var showDialogButton = document.querySelector('#show-dialog');
-            if (!dialog.showModal) {
-                dialogPolyfill.registerDialog(dialog);
-            }
-            showDialogButton.addEventListener('click', function () {
-                dialog.showModal();
-            });
-            dialog.querySelector('.close').addEventListener('click', function () {
-                dialog.close();
-                //work arround is here!
-                document.querySelector('.mdl-layout__content').style.overflowX = 'auto';
-                document.querySelector('.mdl-layout__content').style.overflowX = '';
-                //work arround done!
-            });
+                                var dialog = document.querySelector('dialog');
+                                var showDialogButton = document.querySelector('#show-dialog');
+                                if (!dialog.showModal) {
+                                    dialogPolyfill.registerDialog(dialog);
+                                }
+                                showDialogButton.addEventListener('click', function () {
+                                    dialog.showModal();
+                                });
+                                dialog.querySelector('.close').addEventListener('click', function () {
+                                    dialog.close();
+                                    //work arround is here!
+                                    document.querySelector('.mdl-layout__content').style.overflowX = 'auto';
+                                    document.querySelector('.mdl-layout__content').style.overflowX = '';
+                                    //work arround done!
+                                });
         </script>
     </body>
 </html>
