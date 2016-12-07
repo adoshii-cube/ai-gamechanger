@@ -32,6 +32,7 @@
             $(function () {
                 $("#header").load("header.html");
                 $("#drawer").load("drawer.html");
+                $("#footer").load("footer.html");
             });
         </script>
         <script>
@@ -54,66 +55,9 @@
     </head>
     <body>
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
             <header id="header" class="android-header mdl-layout__header mdl-layout__header--waterfall"></header>
             <div id="drawer" class="android-drawer mdl-layout__drawer"></div>
-<!--            <header class="android-header mdl-layout__header mdl-layout__header--waterfall">
-                <div class="mdl-layout__header-row">
-                    <a href="index.html">
-                        <span class="android-title mdl-layout-title">
-                            <img class="android-logo-image" src="images/OWEN_Logo.png" alt="OWEN Logo">
-                        </span>
-                    </a>
-                     Add spacer, to align navigation to the right in desktop 
-                    <div class="android-header-spacer mdl-layout-spacer"></div>
-
-                     Navigation 
-                    <div class="android-navigation-container">
-                        <nav class="android-navigation mdl-navigation">
-                            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="solutions.html">Solutions</a>
-                            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="howitworks.html">How it works ?</a>
-                            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="about.html">About Us</a>
-                            <a class="mdl-mdl-typography--text-uppercase mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--orange-500 mdl-color-text--white" href="http://engage.owenanalytics.com/">Login</a>
-                        </nav>
-                    </div>
-                    <span class="android-mobile-title mdl-layout-title">
-                        <img class="android-logo-image" src="images/OWEN_Logo.png" alt="OWEN Logo">
-                    </span>
-                </div>
-            </header>-->
-
-<!--            <div class="android-drawer mdl-layout__drawer">
-                <span class="mdl-layout-title">
-                    <img class="android-logo-image" src="images/OWEN_Logo_white.png">
-                </span>
-                <nav class="mdl-navigation">
-                    <span class="mdl-navigation__link">Home</span>
-                    <a class="mdl-navigation__link" href="index.html#ELTV">Employee Life Time Value</a>
-                    <a class="mdl-navigation__link" href="index.html#clients">Our Clients</a>
-                    <div class="android-drawer-separator"></div>
-                    <span class="mdl-navigation__link">Solutions</span>
-                    <a class="mdl-navigation__link" href="solutions.html#talentAcquisition">Talent Acquisition</a>
-                    <a class="mdl-navigation__link" href="solutions.html#productivity">Productivity</a>
-                    <a class="mdl-navigation__link" href="solutions.html#onboardingEngagement">Onboarding & Engagement</a>
-                    <a class="mdl-navigation__link" href="solutions.html#retention">Retention</a>
-                    <div class="android-drawer-separator"></div>
-                    <span class="mdl-navigation__link">How it works ?</span>
-                    <a class="mdl-navigation__link" href="howitworks.html#ona">Organizational Network Analysis</a>
-                    <a class="mdl-navigation__link" href="howitworks.html#ona">Machine Learning</a>
-                    <div class="android-drawer-separator"></div>
-                    <span class="mdl-navigation__link">About Us</span>
-                    <a class="mdl-navigation__link" href="about.html#advisors">Advisors</a>
-                    <a class="mdl-navigation__link" href="about.html#leaders">Leaders</a>
-                    <a class="mdl-navigation__link" href="about.html#team">Team</a>
-                    <div class="android-drawer-separator"></div>
-                    <span class="mdl-navigation__link">Contact Us</span>
-                    <a class="mdl-navigation__link" href="contactus.html#git">Get in touch</a>
-                    <a class="mdl-navigation__link" href="contactus.html#locations">Locations</a>
-                    <div class="android-drawer-separator"></div>
-                    <span class="mdl-navigation__link">
-                        <a class="mdl-mdl-typography--text-uppercase mdl-color-text--orange-500 login-link-drawer" href="http://engage.owenanalytics.com/">Login</a>
-                    </span>
-                </nav>
-            </div>-->
 
             <main class="android-content mdl-layout__content">
                 <a id="top"></a>
@@ -246,79 +190,7 @@
                         <!--</div>-->
                     </section>
                 </div>
-
-                <footer class="android-footer mdl-mega-footer">
-                    <div class="mdl-mega-footer--top-section">
-                        <div class="mdl-mega-footer--left-section">
-                            <button class="mdl-mega-footer--social-btn mdl-button mdl-js-button mdl-js-ripple-effect social" onclick="window.open('https://www.facebook.com/icube.analytics.dataservices/')">
-                                <i class="mdi mdi-facebook mdi-light mdi-24px"></i>
-                            </button>
-                            &nbsp;
-                            <button class="mdl-mega-footer--social-btn mdl-button mdl-js-button mdl-js-ripple-effect social" onclick="window.open('https://twitter.com/Owen_analytics')">
-                                <i class="mdi mdi-twitter mdi-light mdi-24px"></i>
-                            </button>
-                            &nbsp;
-                            <button class="mdl-mega-footer--social-btn mdl-button mdl-js-button mdl-js-ripple-effect social" onclick="window.open('https://www.linkedin.com/company/i-cube-analytics-and-data-services')">
-                                <i class="mdi mdi-linkedin mdi-light mdi-24px"></i>
-                            </button>
-                        </div>
-                        <div class="mdl-mega-footer--right-section">
-                            <a class="mdl-typography--font-light" href="#top">
-                                Back to Top
-                                <i class="material-icons">expand_less</i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="mdl-mega-footer--middle-section">
-                        <div class="mdl-mega-footer--drop-down-section">
-                            <h1 class="mdl-mega-footer--heading">Home</h1>
-                            <ul class="mdl-mega-footer--link-list">
-                                <li><a href="index.html#ELTV">Employee Life Time Value</a></li>
-                                <li><a href="index.html#clients">Our Clients</a></li>
-                            </ul>
-                        </div>
-                        <div class="mdl-mega-footer--drop-down-section">
-                            <h1 class="mdl-mega-footer--heading">Solutions</h1>
-                            <ul class="mdl-mega-footer--link-list">
-                                <li><a href="solutions.html#talentAcquisition">Talent Acquisition</a></li>
-                                <li><a href="solutions.html#productivity">Productivity</a></li>
-                                <li><a href="solutions.html#onboardingEngagement">Onboarding & Engagement</a></li>
-                                <li><a href="solutions.html#retention">Retention</a></li>
-                            </ul>
-                        </div>
-                        <div class="mdl-mega-footer--drop-down-section">
-                            <h1 class="mdl-mega-footer--heading">How It Works</h1>
-                            <ul class="mdl-mega-footer--link-list">
-                                <li><a href="howitworks.html#ona">Organizational Network Analysis</a></li>
-                                <li><a href="howitworks.html#ml">Machine Learning</a></li>
-                            </ul>
-                        </div>
-                        <div class="mdl-mega-footer--drop-down-section">
-                            <h1 class="mdl-mega-footer--heading">About Us</h1>
-                            <ul class="mdl-mega-footer--link-list">
-                                <li><a href="about.html#advisors">Advisors</a></li>
-                                <li><a href="about.html#leaders">Leaders</a></li>
-                                <li><a href="about.html#team">Team</a></li>
-                            </ul>
-                        </div>
-                        <div class="mdl-mega-footer--drop-down-section">
-                            <h1 class="mdl-mega-footer--heading">Contact Us</h1>
-                            <ul class="mdl-mega-footer--link-list">
-                                <li><a href="contactus.html#git">Get in touch</a></li>
-                                <li><a href="contactus.html#locations">Locations</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="mdl-mega-footer--bottom-section">
-                        <div class="mdl-logo">
-                            © 2017 i-Cube Analytics & Data Services - All rights reserved.
-                        </div>
-                        <a class="android-link mdl-typography--font-light" href="">Privacy Policy</a>
-                    </div>
-
-                </footer>
+                <footer id="footer" class="android-footer mdl-mega-footer"></footer>
             </main>
         </div>
         <a href="contactus.html" id="contact-us" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--green mdl-color-text--accent-contrast">Contact Us<i class="material-icons">chevron_right</i></a>
