@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <!--        <div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">-->
+        <div class="mdl-snackbar__text"></div>
+        <button class="mdl-snackbar__action" type="button"></button>
+        <!--</div>-->
+        <script>
+            (function () {
+                'use strict';
+                var snackbarContainer = document.querySelector('#toast');
+                var showToastButton = document.querySelector('#submit-button');
+                if (showToastButton !== null) {
+                    showToastButton.addEventListener('click', function () {
+                        'use strict';
+                        var inputFieldCheck = $("input").filter(function () {
+                            return $.trim($(this).val()).length === 0;
+                        }).length === 0;
+                        if (!inputFieldCheck) {
+                            $(".mdl-snackbar").prop('aria-hidden', true);
+                            $('.mdl-snackbar').removeClass('mdl-snackbar--active');
+                        } else {
+                            var data = {message: 'Thank you. We will get in touch with you shortly'};
+                            snackbarContainer.MaterialSnackbar.showSnackbar(data);
+                        }
+                    });
+                }
+            }());
+        </script>
+    </body>
+</html>

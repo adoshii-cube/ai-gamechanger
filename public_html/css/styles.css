@@ -169,7 +169,8 @@ textarea{
     width: auto;
 }
 
-#contact-us {
+#contact-us,
+#show-dialog{
     position: fixed;
     display: block;
     right: 0;

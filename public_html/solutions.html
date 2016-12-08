@@ -33,6 +33,8 @@
                 $("#header").load("header.html");
                 $("#drawer").load("drawer.html");
                 $("#footer").load("footer.html");
+                $("#dialog").load("dialog.html");
+                $("#toast").load("toast.html");
             });
         </script>
         <script>
@@ -78,10 +80,10 @@
                             <!--<div class="solution">-->
                             <div class="swiper-container">
                                 <div class="swiper-button-prev mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-cell--hide-tablet mdl-cell--hide-phone">
-                                    <i class="mdi mdi-arrow-left"></i>
+                                    <i class="mdi mdi-chevron-left"></i>
                                 </div>
                                 <div class="swiper-button-next mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-cell--hide-tablet mdl-cell--hide-phone">
-                                    <i class="mdi mdi-arrow-right"></i>
+                                    <i class="mdi mdi-chevron-right"></i>
                                 </div>
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
@@ -130,10 +132,10 @@
                         <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-color-text--grey-100">
                             <div class="swiper-container">
                                 <div class="swiper-button-prev mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-cell--hide-tablet mdl-cell--hide-phone">
-                                    <i class="mdi mdi-arrow-left"></i>
+                                    <i class="mdi mdi-chevron-left"></i>
                                 </div>
                                 <div class="swiper-button-next mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-cell--hide-tablet mdl-cell--hide-phone">
-                                    <i class="mdi mdi-arrow-right"></i>
+                                    <i class="mdi mdi-chevron-right"></i>
                                 </div>
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
@@ -175,10 +177,10 @@
                         <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-color-text--grey-100">
                             <div class="swiper-container">
                                 <div class="swiper-button-prev mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-cell--hide-tablet mdl-cell--hide-phone">
-                                    <i class="mdi mdi-arrow-left"></i>
+                                    <i class="mdi mdi-chevron-left"></i>
                                 </div>
                                 <div class="swiper-button-next mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-cell--hide-tablet mdl-cell--hide-phone">
-                                    <i class="mdi mdi-arrow-right"></i>
+                                    <i class="mdi mdi-chevron-right"></i>
                                 </div>
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
@@ -220,10 +222,10 @@
                         <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-color-text--grey-100">
                             <div class="swiper-container">
                                 <div class="swiper-button-prev mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-cell--hide-tablet mdl-cell--hide-phone">
-                                    <i class="mdi mdi-arrow-left"></i>
+                                    <i class="mdi mdi-chevron-left"></i>
                                 </div>
                                 <div class="swiper-button-next mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-cell--hide-tablet mdl-cell--hide-phone">
-                                    <i class="mdi mdi-arrow-right"></i>
+                                    <i class="mdi mdi-chevron-right"></i>
                                 </div>
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
@@ -252,9 +254,11 @@
                 </div>
 
                 <footer id="footer" class="android-footer mdl-mega-footer"></footer>
+                <dialog id="dialog" class="mdl-dialog"></dialog>
+                <div id="toast" class="mdl-js-snackbar mdl-snackbar"></div>
             </main>
         </div>
-        <a href="contactus.html" id="contact-us" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--green mdl-color-text--accent-contrast">Contact Us<i class="material-icons">chevron_right</i></a>
+        <a id="show-dialog" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--green mdl-color-text--accent-contrast">Contact Us<i class="material-icons">chevron_right</i></a>
         <script src="js/material.min.js"></script>
         <script src="js/swiper.min.js"></script>
         <script src="js/owen.js"></script>

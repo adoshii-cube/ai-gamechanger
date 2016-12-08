@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h4 class="mdl-dialog__title">Get in touch</h4>
+        <div class="mdl-dialog__content">
+            <form action="#" class="">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-width">
+                    <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name">
+                    <label class="mdl-textfield__label mdl-color-text--green-500" for="Name">Name...</label>
+                    <span class="mdl-textfield__error">Letters and spaces only</span>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-width">
+                    <input class="mdl-textfield__input" pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="text" id="Email">
+                    <label class="mdl-textfield__label mdl-color-text--green-500" for="Email">Email...</label>
+                    <span class="mdl-textfield__error">Please enter a valid email address</span>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-width">
+                    <textarea class="mdl-textfield__input" rows="5" id="note"></textarea>
+                    <label class="mdl-textfield__label mdl-color-text--green-500" for="note">Enter note</label>
+                </div>
+            </form>
+        </div>
+        <div class="mdl-dialog__actions">
+            <!--<button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect">Submit</button>-->
+            <button id="submit-button" class="mdl-button mdl-js-button mdl-js-ripple-effect" type="button">Submit</button>
+            <button type="button" class="mdl-button close">Cancel</button>
+        </div>
+
+        <script>
+            var dialog = document.querySelector('dialog');
+            var showDialogButton = document.querySelector('#show-dialog');
+            if (!dialog.showModal) {
+                dialogPolyfill.registerDialog(dialog);
+            }
+            showDialogButton.addEventListener('click', function () {
+                $("#Name").parent().removeClass('is-invalid');
+                $("#Email").parent().removeClass('is-invalid');
+                dialog.showModal();
+            });
+            dialog.querySelector('.close').addEventListener('click', function () {
+                dialog.close();
+                //work arround is here!
+                document.querySelector('.mdl-layout__content').style.overflowX = 'auto';
+                document.querySelector('.mdl-layout__content').style.overflowX = '';
+                //work arround done!
+            });
+
+            $("#submit-button").on('click', function (event) {
+                var inputFieldCheck = $("input").filter(function () {
+                    return $.trim($(this).val()).length === 0;
+                }).length === 0;
+                if (!inputFieldCheck) {
+                    $("input").parent().addClass('is-invalid');
+                } else {
+                    $("input").parent().removeClass('is-invalid');
+                    var dialog = document.querySelector('dialog');
+                    dialog.close();
+                }
+
+            });
+        </script>
+
+
+
+        <script src="js/owen.js"></script>
+    </body>
+</html>
